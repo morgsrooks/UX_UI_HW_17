@@ -2,33 +2,160 @@
 
 .nav {
     position: relative;
-    width: 1728px;
+    width: 100%;
     height: 75px;
     text-align: center;
     background: #ffffff;
     color: 000000;
     font-size: 20px;
     box-shadow: 0px 4px 13px -5px rgba(0, 66, 91, 0.28);
+    padding: 0%;
   }
 
+.navlogo {
+    position: absolute;
+    width: 96.72px;
+    height: 40.36px;
+    left: 97.29px;
+    top: 14px;
+  }
+  
 /* Nav Items Position */
 
 .inline-block {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 37px;
-    left: 65.97%;
-    right: 13.77%;
-    top: 28.57%;
-    bottom: 28.57%;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 
 /* Menu Items */
 
-
 .headertext {
+    padding: 10px 15px;
+    display: block;
+    width: 92px;
+    height: 27px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 37px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+/* Say Hi CTA */
+
+.headerbutton {
+    position: absolute;
+    background: #B5DD37;
+    border-radius: 6px;
+    border: #B5DD37;
+    left: 88.19%;
+    right: 5.79%;
+    top: 23.81%;
+    bottom: 28.57%;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    transition-duration: 0.8s;
+    text-decoration: none;
+    cursor: pointer;
+}
+      
+.headerbutton:hover {
+    background: #FF71D7;
+    border-radius: 6px;
+    border-color: #FF71D7;
+    opacity: 50%;
+    transition: all 0.8s;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* H1 */
+h1 {
+    font-family: 'Dinosaur Cake DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30.0544px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/* H2 */
+h2 {
+    font-family: 'Dinosaur Cake DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 189px;
+    line-height: 119px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF71D7;
+}
+
+/* H3 */
+h3 {
+    font-family: 'Dinosaur Cake DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 217px;
+    line-height: 119px;
+    display: flex;
+    align-items: center;
+    color: #FF71D7;
+}
+
+/* H4 */
+h4 {
+    font-family: 'Dinosaur Cake DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 217px;
+    line-height: 119px;
+    display: flex;
+    align-items: center;
+    color: #FF71D7;
+}
+
+/* Paragraph */
+p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 127.5%;
+    color: #FFFFFF;
+}
+
+/* Background Gradient */
+body {
+    width: auto;
+    height: 3095px;
+    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
+    background-repeat: no-repeat;
+}
+
+/* Footer Items */
+
+
+.footertext {
+    display: inline-block;
     width: 92px;
     height: 27px;
     font-family: 'Satoshi';
@@ -39,29 +166,4 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
-}
-/* Say Hi CTA */
-
-.headerbutton {
-    position: absolute;
-    left: 88.19%;
-    right: 5.79%;
-    top: 23.81%;
-    bottom: 28.57%;
-}
-/* Paragraph */
-p {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 127.5%;
-    color: #FFFFFF;
-}
-/* Background Gradient */
-body {
-    width: auto;
-    height: 3095px;
-    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
-    }
+    color: #000000;}
