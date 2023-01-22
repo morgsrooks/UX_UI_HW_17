@@ -1,0 +1,67 @@
+/* Nav */
+
+.nav {
+    position: relative;
+    width: 1728px;
+    height: 75px;
+    text-align: center;
+    background: #ffffff;
+    color: 000000;
+    font-size: 20px;
+    box-shadow: 0px 4px 13px -5px rgba(0, 66, 91, 0.28);
+  }
+
+/* Nav Items Position */
+
+.inline-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 37px;
+    left: 65.97%;
+    right: 13.77%;
+    top: 28.57%;
+    bottom: 28.57%;
+}
+
+/* Menu Items */
+
+
+.headertext {
+    width: 92px;
+    height: 27px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+/* Say Hi CTA */
+
+.headerbutton {
+    position: absolute;
+    left: 88.19%;
+    right: 5.79%;
+    top: 23.81%;
+    bottom: 28.57%;
+}
+/* Paragraph */
+p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 127.5%;
+    color: #FFFFFF;
+}
+/* Background Gradient */
+body {
+    width: auto;
+    height: 3095px;
+    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
+    }
