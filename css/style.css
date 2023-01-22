@@ -1,103 +1,95 @@
 /* Nav */
 
 .nav {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 75px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 0px;
     text-align: center;
     background: #ffffff;
-    color: 000000;
+    color: #000000;
     font-size: 20px;
     box-shadow: 0px 4px 13px -5px rgba(0, 66, 91, 0.28);
-    padding: 0%;
   }
 
 .navlogo {
-    position: absolute;
-    width: 96.72px;
-    height: 40.36px;
-    left: 97.29px;
-    top: 14px;
-  }
-  
+    width: 100px;
+}
 /* Nav Items Position */
 
 .inline-block {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
 }
 
+ul {
+   display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 37px;
+}
 
 /* Menu Items */
 
 .headertext {
-    padding: 10px 15px;
-    display: block;
-    width: 92px;
-    height: 27px;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 100px;
+    line-height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 25px;
-    gap: 37px;
-    align-items: center;
     text-align: center;
     color: #000000;
     text-transform: capitalize;
 }
 
+
 /* Say Hi CTA */
 
 .headerbutton {
-    position: absolute;
     background: #B5DD37;
     border-radius: 6px;
     border: #B5DD37;
-    left: 88.19%;
-    right: 5.79%;
-    top: 23.81%;
-    bottom: 28.57%;
     font-size: 16px;
     color: #FFFFFF;
     text-align: center;
     transition-duration: 0.8s;
     text-decoration: none;
     cursor: pointer;
-}
-      
-.headerbutton:hover {
-    background: #FF71D7;
-    border-radius: 6px;
-    border-color: #FF71D7;
-    opacity: 50%;
-    transition: all 0.8s;
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* H1 */
-h1 {
+.h1 {
+/* Greetings */
+    padding: 0px;
+    position: absolute;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 30.0544px;
-    line-height: 75px;
+    font-size: 25.0544px;
+    line-height: px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    width: 600px;
+    height: 76px;
 }
 
 /* H2 */
-h2 {
+.h2 {
+    position: absolute;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
@@ -107,22 +99,24 @@ h2 {
     align-items: center;
     text-align: center;
     color: #FF71D7;
+    position: absolute;
+    width: 1506.04px;
+    height: 199.37px;
 }
 
 /* H3 */
-h3 {
+.h3 {
+    position: absolute;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
     font-size: 217px;
     line-height: 119px;
-    display: flex;
-    align-items: center;
     color: #FF71D7;
 }
 
 /* H4 */
-h4 {
+.h4 {
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
@@ -141,6 +135,8 @@ p {
     font-size: 32px;
     line-height: 127.5%;
     color: #FFFFFF;
+    width: 728px;
+    height: 217px;
 }
 
 /* Background Gradient */
@@ -151,19 +147,101 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Footer Items */
+/* Hero  */
+.star1 {
+  position: absolute;
+  left: 11.23%;
+  right: 86.31%;
+  top: 10.73%;
+}
 
+.star2 {
+  position: absolute;
+  left: 88.19%;
+  right: 9.35%;
+  top: 25.84%;
+  bottom: 95.48%;
+}
 
-.footertext {
-    display: inline-block;
-    width: 92px;
-    height: 27px;
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;}
+.star3 {
+  position: absolute;
+  left: 7.47%;
+  right: 91%;
+  top: 30.24%;
+  bottom: 94.32%;
+}
+
+.star4 {
+  position: absolute;
+  left: 84.86%;
+  right: 13.75%;
+  top: 100.74%;
+  bottom: 86.89%;
+  transform: matrix(0.98, 0.19, -0.22, 0.98, 0, 0);
+}
+
+.star5 {
+  position: absolute;
+  left: 6.66%;
+  right: 90.88%;
+  top: 100.14%;
+}
+/* Top Hero Line */
+
+.heroline {
+  position: absolute;
+  width: 270px;
+  height: 561px;
+  left: 555px;
+  top: 20px;
+}
+/* Gradient Hero */
+
+.gradient {
+position: absolute;
+width: 847.45px;
+height: 887.41px;
+left: 699.69px;
+top: 627.24px;
+opacity: 0.8;
+filter: blur(95.6667px);
+transform: rotate(-19.51deg);
+background: rgba(255, 113, 215, 0.37);
+transform: rotate(-19.51deg);
+}
+
+/* Morgs Illustration */
+
+.heroimg{
+position: absolute;
+width: 510.74px;
+height: 699px;
+left: 991px;
+top: 377px;
+z-index: 99;
+}
+
+/* Hero */
+
+.hero {
+    position: absolute;
+    width: 1728px;
+    height: 1000.64px;
+    left: 110.07px;
+    top: 300px;
+}
+
+.content {
+  position: absolute;
+  padding: 223px;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  width: 1720.41px;
+  height: 771px;
+  left: 4px;
+  top: 5782px;
+
+}
