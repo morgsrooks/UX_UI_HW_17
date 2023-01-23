@@ -1,10 +1,26 @@
+/* Fonts */ 
+
+@font-face {
+    font-family: "Dinosaur Cake DEMO";
+    src: url("../fonts/Dinosaur Cake DEMO.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Regular.otf") format("opentype"), 
+         url("../fonts/Satoshi-Medium.otf") format("opentype"),
+         url("../fonts/Satoshi-Bold.otf") format("opentype");
+}
+
 /* Background Gradient */
+    
 body {
     width: auto;
     height: 3095px;
     background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
     background-repeat: no-repeat;
 }
+
 /* Nav */
 
 .nav {
