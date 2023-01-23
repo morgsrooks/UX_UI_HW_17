@@ -1,9 +1,17 @@
+/* Background Gradient */
+body {
+    width: auto;
+    height: 3095px;
+    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
+    background-repeat: no-repeat;
+}
 /* Nav */
 
 .nav {
     z-index: 99;
     position: fixed;
     width: 100%;
+    height: 90px;
     left: 0px;
     top: 0px;
     padding: 0px;
@@ -14,9 +22,17 @@
     box-shadow: 0px 4px 13px -5px rgba(0, 66, 91, 0.28);
   }
 
+.navlinks {
+    text-decoration: none;
+    color: #000000;
+}
+
 .navlogo {
     width: 100px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
+
 /* Nav Items Position */
 
 .inline-block {
@@ -27,12 +43,15 @@
 }
 
 ul {
-   display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 37px;
-}
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 0px;
+     padding-right: 10px;
+     gap: 37px;
+     align-content: center;
+     z-index: 3;
+ }
 
 /* Menu Items */
 
@@ -41,18 +60,17 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    text-align: center;
     color: #000000;
     text-transform: capitalize;
+    padding: 5px;
 }
 
 
-/* Say Hi CTA */
+/* Say Hi CTA header */
 
 .headerbutton {
     background: #B5DD37;
@@ -64,66 +82,91 @@ ul {
     transition-duration: 0.8s;
     text-decoration: none;
     cursor: pointer;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.headerbutton:hover {
+    background-color: #FF71D7;
+    color: white;
+  }
 
 /* H1 */
 .h1 {
-/* Greetings */
-    padding: 0px;
-    position: absolute;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 25.0544px;
-    line-height: px;
+    font-kerning: 1em;
+    font-size: 150%;
     display: flex;
-    align-items: center;
+    align-items: left;
     color: #FFFFFF;
-    width: 600px;
-    height: 76px;
+    height: 2px;
 }
 
 /* H2 */
+
+h2 {
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.85em;
+    z-index: 3;
+}
+
 .h2 {
-    position: absolute;
+    position: relative;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 189px;
-    line-height: 119px;
+    font-size: 880%;
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
     color: #FF71D7;
-    position: absolute;
-    width: 1506.04px;
-    height: 199.37px;
+    height: 220px;
 }
 
 /* H3 */
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: .25em;
+    margin-block-end: 1em;
+    z-index: 3;
+}
+
 .h3 {
-    position: absolute;
+    position: relative;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 217px;
-    line-height: 119px;
+    font-size: 1300%;
+    line-height: 209px;
+    display: flex;
+    align-items: left;
     color: #FF71D7;
+    height: 150px;
 }
 
 /* H4 */
+
+h4 {
+    display: block;
+    margin-block-start: .7em;
+    margin-block-end: .33em;
+}
 .h4 {
+    position: relative;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 217px;
+    font-size: 1200%;
     line-height: 119px;
     display: flex;
-    align-items: center;
+    align-items: left;
     color: #FF71D7;
 }
 
@@ -133,21 +176,23 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 127.5%;
     color: #FFFFFF;
     width: 728px;
-    height: 217px;
-}
-
-/* Background Gradient */
-body {
-    width: auto;
-    height: 3095px;
-    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
-    background-repeat: no-repeat;
+    height: 18px;
+    z-index: 99;
 }
 
 /* Hero  */
+
+.hero {
+    position: relative;
+    width: 90%;
+    height: viewport;
+    left: 7%;
+    top: 7%;
+}
+
+
 .star1 {
   position: absolute;
   left: 11.23%;
@@ -159,15 +204,15 @@ body {
   position: absolute;
   left: 88.19%;
   right: 9.35%;
-  top: 25.84%;
+  top: 15.84%;
   bottom: 95.48%;
 }
 
 .star3 {
   position: absolute;
-  left: 7.47%;
-  right: 91%;
-  top: 30.24%;
+  left: 4.47%;
+  right: 81%;
+  top: 25.24%;
   bottom: 94.32%;
 }
 
@@ -175,146 +220,179 @@ body {
   position: absolute;
   left: 84.86%;
   right: 13.75%;
-  top: 100.74%;
+  top: 60.74%;
   bottom: 86.89%;
   transform: matrix(0.98, 0.19, -0.22, 0.98, 0, 0);
+  z-index: 99;
 }
 
 .star5 {
   position: absolute;
-  left: 6.66%;
+  left: 2.66%;
   right: 90.88%;
-  top: 100.14%;
+  top: 90.14%;
 }
+
 /* Top Hero Line */
 
 .heroline {
   position: absolute;
-  width: 270px;
-  height: 561px;
-  left: 555px;
-  top: 20px;
+  width: 400px;
+  height: 900px;
+  left: 565px;
+  top: 10px;
+  z-index: 2;
 }
+
 /* Gradient Hero */
 
 .gradient {
 position: absolute;
 width: 847.45px;
-height: 887.41px;
-left: 699.69px;
+height: 500.41px;
+left: 809.69px;
 top: 627.24px;
 opacity: 0.8;
 filter: blur(95.6667px);
 transform: rotate(-19.51deg);
 background: rgba(255, 113, 215, 0.37);
 transform: rotate(-19.51deg);
+z-index: 1;
 }
 
 /* Morgs Illustration */
 
-.heroimg{
+.heroimg {
 position: absolute;
-width: 510.74px;
-height: 699px;
+width: 555px;
+height: 999px;
 left: 991px;
 top: 377px;
-z-index: 98;
-}
-
-/* Hero */
-
-.hero {
-    position: absolute;
-    width: 1728px;
-    height: 1000.64px;
-    left: 223.07px;
-    top: 300px;
+z-index: 96;
+filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
 }
 
 
 /* footer */
-.footer {
-  position: absolute;
-  width: 100%;
-  height: 771px;
-  top: 5782px;
-    background-image: "../images/footer_background.svg"  alt="Footer Hills";
-    color: white;
-    text-align: center;
 
+.footer {
+  position: relative;
+  width: 100%;
+  height: 251px;
+  top: 5782px;
 }
+
+.flex-container {
+    display: flex;
+    height: 400px;
+    align-content: center;
+    justify-content: space-between;
+    background-image: url(../images/footer_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.flex-container > div {
+    background-color: transparent;
+    width: 400px;
+    margin: 0px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+  }
 
 .footerinline-block {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      float: center;
+  }
+  
 .footernav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    gap: 37px; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 37px; 
+  }
+  
+.footertext {
+      font-family: 'Satoshi';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: auto;
+      display: flex;
+      text-align: center;
+      color: #ffffff;
+      text-transform: capitalize;
+  }
+  
+.footerlogo {
+      width: 150px;
 }
 
-.footertext {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: auto;
+.buttoninline-block {
     display: flex;
-    text-align: center;
-    color: #ffffff;
-    text-transform: capitalize;
+    flex-direction: column;
 }
+
+.footerbutton {
+      background: #B5DD37;
+      border-radius: 6px;
+      border: #B5DD37;
+      font-size: 27.8px;
+      color: #FFFFFF;
+      text-align: center;
+      transition-duration: 0.8s;
+      text-decoration: none;
+      cursor: pointer;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  
+  .footerbutton:hover {
+      background-color: #FF71D7;
+      color: white;
+    }
+  
+  .footerlinks {
+      text-decoration: none;
+      color: #FFFFFF;
+  }
 
 .footerwords {
-    position: absolute;
-    width: 1086px;
-    height: 126px;
-    left: 51px;
-    top: 78px;
-
+    position: relative;
+    left: 4%;
+    bottom: -190%;
+    background-size: auto;
 }
 
 .footermorgs {
-    position: absolute;
-    left: 66.34%;
-    right: 18.19%;
-    top: 0.02%;
-    bottom: 49.91%;
+    position: relative;
+    left: 70%;
+    bottom: 10%;
     transform: rotate(-4.78deg);
 }
 
 .footerlogo {
-    position: absolute;
-    width: 187.23px;
-    height: 78.3px;
-    left: 183.79px;
-    top: 257.52px;
+    position: relative;
     width: 250px;
+    float: left;
+    left: 183.79px;
+    top: -300px;
 }
 
-.footerbutton {
-    background: #B5DD37;
-    border-radius: 6px;
-    border: #B5DD37;
-    font-size: 27.8px;
-    color: #FFFFFF;
+.copyright {
+    font: 10px;
     text-align: center;
-    transition-duration: 0.8s;
-    text-decoration: none;
-    cursor: pointer;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.footerbackground {
-    width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    background: #00425B;
+    padding-bottom: 30px;
 }
